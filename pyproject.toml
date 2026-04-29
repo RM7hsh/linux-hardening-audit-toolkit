@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "linux-hardening-audit-toolkit"
 version = "0.1.0"
@@ -7,6 +11,10 @@ dependencies = []
 
 [project.scripts]
 lhat = "lhat.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lhat*"]
+exclude = ["reports*", "profiles*", "tests*", "docs*"]
 
 [tool.ruff]
 line-length = 100
