@@ -1,0 +1,15 @@
+[project]
+name = "linux-hardening-audit-toolkit"
+version = "0.1.0"
+description = "Linux security baseline audit toolkit"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+lhat = "lhat.cli:main"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
