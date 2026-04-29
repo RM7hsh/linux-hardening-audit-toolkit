@@ -1,0 +1,11 @@
+---
+profile: server-baseline
+description: Basic Linux server hardening profile
+checks:
+  ssh:
+    require_root_login_disabled: true
+    prefer_password_auth_disabled: true
+  sudo:
+    review_nopasswd: true
+  users:
+    fail_extra_uid_zero: true
