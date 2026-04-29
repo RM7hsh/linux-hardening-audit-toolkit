@@ -4,7 +4,6 @@ from pathlib import Path
 from lhat.checks import disk, firewall, ports, services, ssh, sudo, updates, users
 from lhat.models import CheckResult
 
-
 CHECK_MODULES = [
     ssh,
     firewall,
